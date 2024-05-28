@@ -15,7 +15,7 @@ Add the following script at your **package.json** file
 Then make sure to run right after your **ng-build** command is fully executed and the files are sucessfully written at your storage device. For example:
 
 ```js
-"build": "ng build --configuration production --source-map=false --aot=true && npm run remove-angular-version-script",
+"build": "ng build --configuration production --source-map=false --aot=true && sync -d -f && npm run remove-angular-version-script",
 ```
 
 ## Showcase
